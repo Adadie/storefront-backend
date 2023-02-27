@@ -23,11 +23,11 @@ Product.init(
       allowNull: false,
       type: DataTypes.TEXT,
     },
-    image: {
-      allowNull: true,
+    category: {
+      allowNull: false,
       type: DataTypes.STRING,
     },
-    category: {
+    image: {
       allowNull: true,
       type: DataTypes.STRING,
     },
@@ -35,5 +35,5 @@ Product.init(
   {
     sequelize,
     modelName: 'products',
-  },
+  }
 );

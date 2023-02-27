@@ -4,7 +4,8 @@ import { upload } from '../middlewares/upload';
 
 const router = Router();
 
-router.get('/products', getAllProducts);
-router.post('/products', upload.single('image'), createProduct);
+router.get('/', getAllProducts);
+router.post('/', upload.single('image'), createProduct);
+// router.post('/', createProduct);
 
 export default router;

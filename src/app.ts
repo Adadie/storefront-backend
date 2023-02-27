@@ -3,6 +3,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import path from 'path';
 import  ProductRoutes from './routes/ProductsRoutes';
+import  CategoriesRoutes from './routes/CategoriesRoutes';
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use('/uploads', express.static(path.join(__dirname, '..', 'uploads')));
 
 // Routes
 app.use('/products', ProductRoutes);
+app.use('/categories', CategoriesRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 5000;
