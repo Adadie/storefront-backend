@@ -31,6 +31,10 @@ Product.init(
       allowNull: true,
       type: DataTypes.STRING,
     },
+    mfgDate: {
+      allowNull: false,
+      type: DataTypes.DATE,
+    },
   },
   {
     sequelize,
